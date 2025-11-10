@@ -10,16 +10,103 @@ collections:
     label: "网站设置"
     files:
       - name: "site_content"
-        label: "网站内容编辑"
+        label: "完整网站内容编辑"
         file: "site-content.json"
         fields:
-          - {label: "网站标题", name: "site_title", widget: "string", default: "Dumpling Website Preview v9 — Refined Colors"}
-          - {label: "Hero区域主标题", name: "hero_title", widget: "string", default: "Make Your Impact"}
-          - {label: "Hero区域副标题", name: "hero_subtitle", widget: "text", default: "Transform communities through innovative solutions and meaningful connections"}
-          - {label: "About区域标题", name: "about_title", widget: "string", default: "ABOUT"}
-          - {label: "About区域内容", name: "about_content", widget: "markdown", default: "Dumpling is a bilingual Web3 educator, YouTuber, and strategist trusted by both English- and Chinese-speaking audiences..."}
-          - {label: "About区域图片", name: "about_image", widget: "image", default: "/images/about.png"}
-          - {label: "联系邮箱", name: "contact_email", widget: "string", default: "hello@askdumpling.com"}
+          - {label: "网站标题", name: "site_title", widget: "string"}
+          - label: "Hero区域"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "主标题", name: "title", widget: "string"}
+              - {label: "副标题", name: "subtitle", widget: "text"}
+          - label: "About区域"
+            name: "about"
+            widget: "object"
+            fields:
+              - {label: "标题", name: "title", widget: "string"}
+              - {label: "内容", name: "content", widget: "markdown"}
+              - {label: "图片", name: "image", widget: "image"}
+          - label: "Impact数据"
+            name: "impact"
+            widget: "object"
+            fields:
+              - {label: "标题", name: "title", widget: "string"}
+              - label: "数据卡片"
+                name: "cards"
+                widget: "list"
+                fields:
+                  - {label: "数据内容", name: "text", widget: "string"}
+          - label: "Seen & Heard"
+            name: "seen_heard"
+            widget: "object"
+            fields:
+              - {label: "标题", name: "title", widget: "string"}
+              - {label: "政府机构副标题", name: "gov_subtitle", widget: "string"}
+              - {label: "行业活动副标题", name: "industry_subtitle", widget: "string"}
+          - label: "Awards & Affiliations"
+            name: "awards"
+            widget: "object"
+            fields:
+              - {label: "标题", name: "title", widget: "string"}
+          - label: "Advisory & Strategy"
+            name: "advisory"
+            widget: "object"
+            fields:
+              - {label: "标题", name: "title", widget: "string"}
+              - label: "成就列表"
+                name: "achievements"
+                widget: "list"
+                fields:
+                  - {label: "成就描述", name: "text", widget: "string"}
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "object"
+            fields:
+              - {label: "标题", name: "title", widget: "string"}
+              - label: "推荐语列表"
+                name: "items"
+                widget: "list"
+                fields:
+                  - {label: "推荐语", name: "quote", widget: "text"}
+                  - {label: "推荐人", name: "author", widget: "string"}
+          - label: "Knowledge Contributions"
+            name: "knowledge"
+            widget: "object"
+            fields:
+              - {label: "标题", name: "title", widget: "string"}
+              - label: "贡献列表"
+                name: "items"
+                widget: "list"
+                fields:
+                  - {label: "机构名称", name: "institution", widget: "string"}
+                  - {label: "描述", name: "description", widget: "text"}
+          - label: "Topics & Insights"
+            name: "topics"
+            widget: "object"
+            fields:
+              - {label: "标题", name: "title", widget: "string"}
+              - label: "话题列表"
+                name: "items"
+                widget: "list"
+                fields:
+                  - {label: "话题标题", name: "title", widget: "string"}
+          - label: "Quotes"
+            name: "quotes"
+            widget: "object"
+            fields:
+              - {label: "标题", name: "title", widget: "string"}
+              - label: "引语列表"
+                name: "items"
+                widget: "list"
+                fields:
+                  - {label: "引语内容", name: "quote", widget: "text"}
+          - label: "联系信息"
+            name: "contact"
+            widget: "object"
+            fields:
+              - {label: "邮箱", name: "email", widget: "string"}
+              - {label: "版权信息", name: "copyright", widget: "string"}
   - name: "images"
     label: "图片管理"
     folder: "images"

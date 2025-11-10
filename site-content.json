@@ -1,9 +1,75 @@
 {
   "site_title": "Dumpling Website Preview v9 — Refined Colors",
-  "hero_title": "Dumpling",
-  "hero_subtitle": "A bilingual Web3 YouTuber and cultural strategist — transforming complex blockchain ideas into accessible, story-driven education across YouTube and Twitter.",
-  "about_title": "ABOUT",
-  "about_content": "Dumpling is a bilingual Web3 educator, YouTuber, and strategist trusted by both English- and Chinese-speaking audiences. She creates deep, educational content that connects blockchain's human and cultural layers — bridging storytelling and social insight.",
-  "about_image": "/images/about.png",
-  "contact_email": "bullishdumpling@gmail.com"
+  "hero": {
+    "title": "Dumpling",
+    "subtitle": "A bilingual Web3 YouTuber and cultural strategist — transforming complex blockchain ideas into accessible, story-driven education across YouTube and Twitter."
+  },
+  "about": {
+    "title": "ABOUT",
+    "content": "Dumpling is a bilingual Web3 educator, YouTuber, and strategist trusted by both English- and Chinese-speaking audiences. She creates deep, educational content that connects blockchain's human and cultural layers — bridging storytelling and social insight.",
+    "image": "/images/about.png"
+  },
+  "impact": {
+    "title": "IMPACT",
+    "cards": [
+      { "text": "₳65M ADA Managed" },
+      { "text": "6,600+ Community Members" },
+      { "text": "48,000+ Organic Followers" },
+      { "text": "100+ Industry Interviews" },
+      { "text": "1.46% Governance Voting Power" },
+      { "text": "20K+ YouTube Subscribers" }
+    ]
+  },
+  "seen_heard": {
+    "title": "SEEN & HEARD",
+    "gov_subtitle": "Government & Institutions",
+    "industry_subtitle": "Industry Events"
+  },
+  "awards": {
+    "title": "Awards & Affiliations"
+  },
+  "advisory": {
+    "title": "Advisory & Strategy",
+    "achievements": [
+      { "text": "Supported 10+ Web3 teams on brand, community, and trust." },
+      { "text": "Helped teams 2.4x their X engagement and 3x followers organically." },
+      { "text": "Guided 60+ founders in their Web3 journey." }
+    ]
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "items": [
+      { "quote": "Testimonial text here...", "author": "CEO of" },
+      { "quote": "Another testimonial text here...", "author": "" }
+    ]
+  },
+  "knowledge": {
+    "title": "Knowledge Contributions",
+    "items": [
+      { "institution": "University of Surrey", "description": "Guest talk on Careers in Web3." },
+      { "institution": "Anglia Ruskin University", "description": "Sessions on blockchain business models." },
+      { "institution": "CIFY Institute", "description": "Workshops on Web3 Security and Protection." }
+    ]
+  },
+  "topics": {
+    "title": "Topics & Insights",
+    "items": [
+      { "title": "Social Media Rewired – How decentralized platforms reshape identity." },
+      { "title": "Trust Without Ads – Why credibility is the new marketing." },
+      { "title": "Branding in Web3 – Building loyalty through shared narratives." },
+      { "title": "The Culture Layer – Why belief and memes drive blockchain adoption." }
+    ]
+  },
+  "quotes": {
+    "title": "Quotes",
+    "items": [
+      { "quote": "In a trustless ecosystem, credibility becomes a form of capital." },
+      { "quote": "Education in Web3 is no longer top-down — it's peer-to-peer." },
+      { "quote": "Blockchain's rise is not just technological; it's a cultural inflection point." }
+    ]
+  },
+  "contact": {
+    "email": "bullishdumpling@gmail.com",
+    "copyright": "© 2025 Dumpling | All Rights Reserved"
+  }
 }
