@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)file:///Users/spicypanda/Downloads/dumpling_site_improved.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dumpling Website Preview v9 — Refined Colors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background-color: #F9F6F8;
+      color: #2B2B2B;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* 通用样式 */
+    section { 
+      padding: 80px 10%;
+      animation: fadeIn 0.8s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 { 
+      color: #6A1E3A;
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 40px;
+      font-weight: 700;
+      position: relative;
+      padding-bottom: 20px;
+    }
+
+    h3 {
+      color: #6A1E3A;
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 40px;
+      font-weight: 700;
+      position: relative;
+      padding-bottom: 20px;
+    }
+
+    h3::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(90deg, #6A1E3A, #7A568E);
+      border-radius: 2px;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(90deg, #6A1E3A, #7A568E);
+      border-radius: 2px;
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #6A1E3A 0%, #5E2F56 100%);
+      color: #fff;
+      text-align: center;
+      padding: 200px 10% 120px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.05)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,138.7C960,139,1056,117,1152,101.3C1248,85,1344,75,1392,69.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+      background-size: cover;
+      opacity: 0.3;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .hero h1 { 
+      font-size: 5em;
+      margin-bottom: 25px;
+      font-weight: 700;
+      animation: fadeInUp 1s ease-out;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .hero p { 
+      font-size: 1.4em;
+      max-width: 800px;
+      margin: 0 auto 40px;
+      color: #E8D6E5;
+      line-height: 1.8;
+      animation: fadeInUp 1s ease-out 0.2s backwards;
+    }
+
+    /* ABOUT */
+    .about { 
+      display: flex;
+      align-items: center;
+      gap: 60px;
+      background-color: #F3E8F1;
+    }
+
+    .about .img-placeholder { 
+      flex: 1;
+      background: linear-gradient(135deg, #C5B1C5 0%, #BFA8C2 100%);
+      height: 450px;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about .img-placeholder::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(45deg, rgba(106,30,58,0.3), transparent);
+    }
+
+    .about .img-placeholder:hover {
+      transform: scale(1.03);
+    }
+
+    .about .text { 
+      flex: 1;
+    }
+
+    .about h2 {
+      text-align: left;
+      margin-bottom: 25px;
+    }
+
+    .about h2::after {
+      left: 0;
+      transform: none;
+    }
+
+    .about p {
+      font-size: 1.15em;
+      line-height: 1.8;
+      color: #444;
+    }
+
+    /* IMPACT */
+    .impact { 
+      background: linear-gradient(135deg, #7A568E 0%, #6A1E3A 100%);
+      color: #fff;
+      text-align: center;
+    }
+
+    .impact h2 { 
+      text-transform: uppercase;
+      color: #fff;
+      letter-spacing: 3px;
+    }
+
+    .impact h2::after {
+      background: #fff;
+    }
+
+    .impact .cards { 
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: 50px;
+      justify-items: center;
+    }
+
+    .impact .card { 
+      background: rgba(255, 255, 255, 0.15);
+      padding: 40px 25px;
+      border-radius: 15px;
+      font-weight: 600;
+      font-size: 1.15em;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: all 0.3s;
+      cursor: default;
+      width: 300px;
+      height: 150px;
+    }
+
+    .impact .card:hover {
+      background: rgba(255, 255, 255, 0.25);
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    }
+
+    /* VISUAL STORY */
+    .visual-story { 
+      text-align: center;
+      background-color: #F7EFF8;
+    }
+
+    .visual-story h3 { 
+      color: #6A1E3A;
+      font-size: 1.8em;
+      margin: 50px 0 30px;
+      font-weight: 600;
+    }
+
+    .visual-story .scroll-row { 
+      display: flex;
+      overflow-x: auto;
+      gap: 25px;
+      padding: 20px 0;
+      scrollbar-width: thin;
+      scrollbar-color: #C5B1C5 #F7EFF8;
+    }
+
+    .visual-story .scroll-row::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .visual-story .scroll-row::-webkit-scrollbar-track {
+      background: #F7EFF8;
+      border-radius: 10px;
+    }
+
+    .visual-story .scroll-row::-webkit-scrollbar-thumb {
+      background: #C5B1C5;
+      border-radius: 10px;
+    }
+
+    .visual-story .img-placeholder { 
+      background: linear-gradient(135deg, #BFA8C2 0%, #C5B1C5 100%);
+      min-width: 200px;
+      height: 150px;
+      border-radius: 12px;
+      position: relative;
+      cursor: pointer;
+      transition: all 0.3s;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    .visual-story .img-placeholder:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    .visual-story .img-placeholder::after { 
+      content: attr(title);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+      color: #fff;
+      opacity: 0;
+      transition: opacity .3s;
+      padding: 20px 15px;
+      font-weight: 600;
+      border-radius: 0 0 12px 12px;
+    }
+
+    .visual-story .img-placeholder:hover::after { 
+      opacity: 1;
+    }
+
+    /* AWARDS */
+    .awards { 
+      background-color: #F2EEF4;
+    }
+
+    .awards .img-grid { 
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      justify-items: center;
+      margin-top: 50px;
+    }
+
+    .awards .img-placeholder { 
+      background: linear-gradient(135deg, #C5B1C5 0%, #BFA8C2 100%);
+      height: 180px;
+      width: 180px;
+      border-radius: 15px;
+      position: relative;
+      cursor: pointer;
+      transition: all 0.3s;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    .awards .img-placeholder:hover {
+      transform: translateY(-10px) rotate(3deg);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    }
+
+    .awards .img-placeholder::after { 
+      content: attr(title);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+      color: #fff;
+      opacity: 0;
+      transition: opacity .3s;
+      padding: 15px 10px;
+      font-size: 0.9em;
+      font-weight: 600;
+      border-radius: 0 0 15px 15px;
+    }
+
+    .awards .img-placeholder:hover::after { 
+      opacity: 1;
+    }
+
+    /* ADVISORY */
+    .advisory { 
+      background-color: #F7EFF8;
+    }
+
+    .advisory ul { 
+      list-style: none;
+      text-align: left;
+      max-width: 900px;
+      margin: 0 auto 40px;
+    }
+
+    .advisory li {
+      padding: 20px 20px 20px 60px;
+      margin: 15px 0;
+      background: rgba(122, 86, 142, 0.08);
+      border-left: 5px solid #7A568E;
+      border-radius: 8px;
+      font-size: 1.1em;
+      position: relative;
+      transition: all 0.3s;
+    }
+
+    .advisory li::before {
+      content: '✓';
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #7A568E;
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+
+    .advisory li:hover {
+      background: rgba(122, 86, 142, 0.15);
+      padding-left: 70px;
+    }
+
+    .advisory .img-row { 
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 50px;
+      flex-wrap: wrap;
+    }
+
+    .advisory .img-placeholder { 
+      background: linear-gradient(135deg, #C5B1C5 0%, #BFA8C2 100%);
+      width: 250px;
+      height: 180px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      transition: all 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .advisory .img-placeholder:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    /* 修改 Testimonials 部分文字位置 */
+    .advisory .img-row .img-placeholder {
+      position: relative;
+    }
+
+    .advisory .img-row .img-placeholder::after {
+      content: attr(title);
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #555;
+      font-size: 0.9em;
+      font-style: italic;
+      text-align: center;
+    }
+
+    /* 修改 Testimonials 部分 */
+    .advisory {
+      background-color: #F7EFF8;
+    }
+
+    .advisory ul {
+      list-style: none;
+      text-align: left;
+      max-width: 900px;
+      margin: 0 auto 40px;
+    }
+
+    .advisory li {
+      padding: 20px 20px 20px 60px;
+      margin: 15px 0;
+      background: rgba(122, 86, 142, 0.08);
+      border-left: 5px solid #7A568E;
+      border-radius: 8px;
+      font-size: 1.1em;
+      position: relative;
+      transition: all 0.3s;
+    }
+
+    .advisory li::before {
+      content: '✓';
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #7A568E;
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+
+    .advisory li:hover {
+      background: rgba(122, 86, 142, 0.15);
+      padding-left: 70px;
+    }
+
+    .advisory .img-row {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 50px;
+      flex-wrap: wrap;
+    }
+
+    .advisory .img-placeholder {
+      position: relative;
+      background: linear-gradient(135deg, #C5B1C5 0%, #BFA8C2 100%);
+      width: 250px;
+      height: 180px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      transition: all 0.3s;
+      overflow: hidden;
+    }
+
+    .advisory .img-placeholder:hover::after {
+      content: attr(title);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+      color: #fff;
+      opacity: 1;
+      transition: opacity .3s;
+      padding: 20px 15px;
+      font-weight: 600;
+      border-radius: 0 0 12px 12px;
+    }
+
+    /* KNOWLEDGE */
+    .knowledge { 
+      background-color: #F3E8F1;
+    }
+
+    .knowledge .grid { 
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    .knowledge .card { 
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 35px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      transition: all 0.3s;
+      border-top: 4px solid #7A568E;
+    }
+
+    .knowledge .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+    }
+
+    .knowledge .card h4 {
+      color: #6A1E3A;
+      margin-bottom: 15px;
+      font-size: 1.3em;
+    }
+
+    .knowledge .card p {
+      color: #555;
+      line-height: 1.6;
+    }
+
+    /* TOPICS */
+    .topics { 
+      background-color: #F2EEF4;
+    }
+
+    .topics ul { 
+      list-style: none;
+      padding: 0;
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .topics li { 
+      background: linear-gradient(135deg, rgba(122,86,142,.1), rgba(106,30,58,.1));
+      margin: 20px 0;
+      padding: 25px 30px;
+      border-radius: 12px;
+      font-size: 1.1em;
+      border-left: 5px solid #6A1E3A;
+      transition: all 0.3s;
+      cursor: default;
+    }
+
+    .topics li:hover {
+      background: linear-gradient(135deg, rgba(122,86,142,.2), rgba(106,30,58,.2));
+      padding-left: 40px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+
+    /* QUOTES */
+    .quotes { 
+      background: linear-gradient(135deg, #5E2F56 0%, #6A1E3A 100%);
+      color: #fff;
+      padding: 100px 10%;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .quotes::before {
+      content: '"';
+      position: absolute;
+      top: 20px;
+      left: 10%;
+      font-size: 15em;
+      opacity: 0.1;
+      font-family: Georgia, serif;
+      line-height: 0.8;
+    }
+
+    .quotes h2 {
+      color: #fff;
+    }
+
+    .quotes h2::after {
+      background: #fff;
+    }
+
+    .quotes p { 
+      font-style: italic;
+      max-width: 800px;
+      margin: 30px auto;
+      font-size: 1.3em;
+      line-height: 1.8;
+      position: relative;
+      z-index: 1;
+      padding: 25px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+    }
+
+    /* FOOTER */
+    .footer { 
+      background: linear-gradient(135deg, #6A1E3A 0%, #5E2F56 100%);
+      color: #fff;
+      text-align: center;
+      padding: 120px 10% 60px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.05)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,138.7C960,139,1056,117,1152,101.3C1248,85,1344,75,1392,69.3L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>') no-repeat top;
+      background-size: cover;
+    }
+
+    .footer-content { 
+      position: relative;
+      z-index: 1;
+    }
+
+    .contact-image {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .contact-image img {
+      src: 'https://via.placeholder.com/400'; /* 替换为有效的占位图片链接 */
+      alt: 'Contact Dumpling';
+    }
+
+    .contact-button {
+      display: inline-block;
+      padding: 15px 40px;
+      background: rgba(255, 255, 255, 0.15);
+      border: 2px solid #fff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 1.2em;
+      transition: all 0.3s;
+      backdrop-filter: blur(10px);
+      margin-bottom: 40px;
+    }
+
+    .contact-button:hover {
+      background: #fff;
+      color: #6A1E3A;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    .footer h2 {
+      color: #fff;
+      margin-bottom: 30px;
+    }
+
+    .footer h2::after {
+      background: #fff;
+    }
+
+    .social-icons { 
+      display: flex;
+      justify-content: center;
+      gap: 35px;
+      margin-top: 40px;
+    }
+
+    .social-icons a { 
+      color: #fff;
+      font-size: 2em;
+      transition: all 0.3s;
+      background: rgba(255, 255, 255, 0.1);
+      width: 70px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      backdrop-filter: blur(10px);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      text-decoration: none; /* 移除社交图标下的下划线 */
+    }
+
+    .social-icons a:hover { 
+      background: #fff;
+      color: #6A1E3A;
+      transform: translateY(-5px) rotate(5deg);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    .copyright { 
+      margin-top: 80px;
+      font-size: 0.95em;
+      color: #E8E1EB;
+      opacity: 0.8;
+    }
+
+    /* 响应式设计 */
+    @media (max-width: 1024px) {
+      .hero h1 { font-size: 4em; }
+      .about { flex-direction: column; }
+      .about h2::after { left: 50%; transform: translateX(-50%); }
+      .about h2 { text-align: center; }
+    }
+
+    @media (max-width: 768px) {
+      section { padding: 60px 5%; }
+      .hero { padding: 150px 5% 100px; }
+      .hero h1 { font-size: 3em; }
+      .hero p { font-size: 1.15em; }
+      h2 { font-size: 2em; }
+      
+      .impact .cards { grid-template-columns: 1fr; }
+      .impact .card {
+        width: 250px;
+        height: 120px;
+      }
+      .visual-story .scroll-row {
+        overflow-x: scroll;
+        gap: 15px;
+      }
+      .visual-story .img-placeholder { 
+        min-width: 150px;
+        height: 120px;
+      }
+      .awards .img-grid { grid-template-columns: repeat(2, 1fr); }
+      .knowledge .grid { grid-template-columns: 1fr; }
+      .advisory .img-row { flex-direction: column; align-items: center; }
+      .social-icons { gap: 25px; }
+      .social-icons a { width: 60px; height: 60px; font-size: 1.5em; }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 2.5em; }
+      .awards .img-grid { grid-template-columns: 1fr; }
+    }
+
+    /* 滚动动画 */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero fade-in visible">
+    <div class="hero-content">
+      <h1>Dumpling</h1>
+      <p>A bilingual Web3 YouTuber and cultural strategist — transforming complex blockchain ideas into accessible, story-driven education across YouTube and Twitter.</p>
+    </div>
+  </section>
+
+  <section class="about fade-in visible" id="about">
+    <div class="img-placeholder"></div>
+    <div class="text">
+      <h2>ABOUT</h2>
+      <p>Dumpling is a bilingual Web3 educator, YouTuber, and strategist trusted by both English- and Chinese-speaking audiences. She creates deep, educational content that connects blockchain's human and cultural layers — bridging storytelling and social insight.</p>
+    </div>
+  </section>
+
+  <section class="impact fade-in visible" id="impact">
+    <h2>IMPACT</h2>
+    <div class="cards">
+      <div class="card">₳65M ADA Managed</div>
+      <div class="card">6,600+ Community Members</div>
+      <div class="card">48,000+ Organic Followers</div>
+      <div class="card">100+ Industry Interviews</div>
+      <div class="card">1.46% Governance Voting Power</div>
+      <div class="card">20K+ YouTube Subscribers</div>
+    </div>
+  </section>
+
+  <section class="visual-story fade-in visible">
+    <h2>SEEN &amp; HEARD</h2>
+    <h3>Government &amp; Institutions</h3>
+    <div class="scroll-row">
+      <div class="img-placeholder" title="House of Lords"></div>
+      <div class="img-placeholder" title="Mansion House"></div>
+      <div class="img-placeholder" title="Digital Commonwealth"></div>
+      <div class="img-placeholder" title="Institution 4"></div>
+      <div class="img-placeholder" title="Institution 5"></div>
+      <div class="img-placeholder" title="Institution 6"></div>
+    </div>
+    <h3>Industry Events</h3>
+    <div class="scroll-row">
+      <div class="img-placeholder" title="Zebu Live"></div>
+      <div class="img-placeholder" title="Mastercard Event"></div>
+      <div class="img-placeholder" title="Global Blockchain Expo"></div>
+      <div class="img-placeholder" title="Event 4"></div>
+      <div class="img-placeholder" title="Event 5"></div>
+      <div class="img-placeholder" title="Event 6"></div>
+      <div class="img-placeholder" title="Event 7"></div>
+      <div class="img-placeholder" title="Event 8"></div>
+    </div>
+  </section>
+
+  <section class="awards fade-in visible" id="awards">
+    <h2>Awards &amp; Affiliations</h2>
+    <div class="img-grid">
+      <div class="img-placeholder" title="Women in FinTech Powerlist"></div>
+      <div class="img-placeholder" title="Best Educational Influencer"></div>
+      <div class="img-placeholder" title="Women in Blockchain"></div>
+      <div class="img-placeholder" title="SheFi Fellow"></div>
+    </div>
+  </section>
+
+  <section class="advisory fade-in visible">
+    <h2>Advisory &amp; Strategy</h2>
+    <ul>
+      <li>Supported 10+ Web3 teams on brand, community, and trust.</li>
+      <li>Helped teams 2.4× their X engagement and 3× followers organically.</li>
+      <li>Guided 60+ founders in their Web3 journey.</li>
+    </ul>
+    <h3>Testimonials</h3>
+    <div class="img-row">
+      <div class="img-placeholder" title="CEO of Blockchain Co">
+        <p style="text-align: center; margin: 20px 0; color: #555; font-style: italic;">"Testimonial text here..."</p>
+      </div>
+      <div class="img-placeholder" title="CTO of Crypto Inc">
+        <p style="text-align: center; margin: 20px 0; color: #555; font-style: italic;">"Another testimonial text here..."</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="knowledge fade-in visible">
+    <h2>Knowledge Contributions</h2>
+    <div class="grid">
+      <div class="card">
+        <h4>University of Surrey</h4>
+        <p>Guest talk on Careers in Web3.</p>
+      </div>
+      <div class="card">
+        <h4>Anglia Ruskin University</h4>
+        <p>Sessions on blockchain business models.</p>
+      </div>
+      <div class="card">
+        <h4>CIFY Institute</h4>
+        <p>Workshops on Web3 Security and Protection.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="topics fade-in visible">
+    <h2>Topics &amp; Insights</h2>
+    <ul>
+      <li>Social Media Rewired – How decentralized platforms reshape identity.</li>
+      <li>Trust Without Ads – Why credibility is the new marketing.</li>
+      <li>Branding in Web3 – Building loyalty through shared narratives.</li>
+      <li>The Culture Layer – Why belief and memes drive blockchain adoption.</li>
+    </ul>
+  </section>
+
+  <section class="quotes fade-in visible">
+    <h2>Quotes</h2>
+    <p>"In a trustless ecosystem, credibility becomes a form of capital."</p>
+    <p>"Education in Web3 is no longer top-down — it's peer-to-peer."</p>
+    <p>"Blockchain's rise is not just technological; it's a cultural inflection point."</p>
+  </section>
+
+  <section class="footer fade-in visible" id="contact">
+    <div class="footer-content">
+      <a href="mailto:bullishdumpling@gmail.com" class="contact-button">Contact</a>
+      <div class="social-icons">
+        <a href="https://linkedin.com/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://t.me/" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
+        <a href="https://youtube.com/" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="copyright">© 2025 Dumpling | All Rights Reserved</div>
+    </div>
+  </section>
+
+  <script>
+    // 滚动动画
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('section').forEach(section => {
+      section.classList.add('fade-in');
+      observer.observe(section);
+    });
+  </script>
+
+
+</body></html>
