@@ -44,11 +44,32 @@ collections:
               - {label: "标题", name: "title", widget: "string"}
               - {label: "政府机构副标题", name: "gov_subtitle", widget: "string"}
               - {label: "行业活动副标题", name: "industry_subtitle", widget: "string"}
+              - label: "政府机构Logo"
+                name: "government_logos"
+                widget: "list"
+                fields:
+                  - {label: "机构名称", name: "name", widget: "string"}
+                  - {label: "Logo图片", name: "logo", widget: "image"}
+                  - {label: "描述", name: "description", widget: "string", required: false}
+              - label: "行业活动Logo"
+                name: "industry_logos"
+                widget: "list"
+                fields:
+                  - {label: "活动名称", name: "name", widget: "string"}
+                  - {label: "Logo图片", name: "logo", widget: "image"}
+                  - {label: "描述", name: "description", widget: "string", required: false}
           - label: "Awards & Affiliations"
             name: "awards"
             widget: "object"
             fields:
               - {label: "标题", name: "title", widget: "string"}
+              - label: "奖项和合作机构Logo"
+                name: "award_logos"
+                widget: "list"
+                fields:
+                  - {label: "机构/奖项名称", name: "name", widget: "string"}
+                  - {label: "Logo图片", name: "logo", widget: "image"}
+                  - {label: "描述", name: "description", widget: "string", required: false}
           - label: "Advisory & Strategy"
             name: "advisory"
             widget: "object"

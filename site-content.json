@@ -49,7 +49,36 @@
   "seen_heard": {
     "title": "SEEN & HEARD",
     "gov_subtitle": "Government & Institutions",
-    "industry_subtitle": "Industry Events"
+    "industry_subtitle": "Industry Events",
+    "government_logos": [
+      {
+        "name": "House of Lords",
+        "logo": "/images/placeholder.png",
+        "description": "UK Parliament House of Lords"
+      },
+      {
+        "name": "Mansion House",
+        "logo": "/images/placeholder.png", 
+        "description": "City of London Corporation"
+      },
+      {
+        "name": "Digital Commonwealth",
+        "logo": "/images/placeholder.png",
+        "description": "Commonwealth Digital Initiative"
+      }
+    ],
+    "industry_logos": [
+      {
+        "name": "Zebu Live",
+        "logo": "/images/placeholder.png",
+        "description": "Blockchain Conference"
+      },
+      {
+        "name": "Mastercard Event",
+        "logo": "/images/placeholder.png",
+        "description": "Financial Technology Summit"
+      }
+    ]
   },
   "testimonials": {
     "title": "Testimonials",
@@ -65,7 +94,19 @@
     ]
   },
   "awards": {
-    "title": "Awards & Affiliations"
+    "title": "Awards & Affiliations",
+    "award_logos": [
+      {
+        "name": "Award 1",
+        "logo": "/images/placeholder.png",
+        "description": "Professional Achievement Award"
+      },
+      {
+        "name": "Award 2", 
+        "logo": "/images/placeholder.png",
+        "description": "Industry Recognition"
+      }
+    ]
   },
   "quotes": {
     "title": "Quotes",
