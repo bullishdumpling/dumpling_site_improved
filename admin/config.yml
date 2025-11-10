@@ -6,32 +6,28 @@ media_folder: "images"
 public_folder: "/images"
 
 collections:
-  - name: "pages"
-    label: "页面内容"
+  - name: "settings"
+    label: "网站设置"
     files:
-      - name: "home"
-        label: "首页内容"
-        file: "content.md"
+      - name: "site_content"
+        label: "网站内容编辑"
+        file: "site-content.json"
         fields:
-          - {label: "网站标题", name: "site_title", widget: "string", default: "Ask Dumpling"}
-          - {label: "Hero 主标题", name: "hero_title", widget: "string", default: "Make Your Impact"}
-          - {label: "Hero 副标题", name: "hero_subtitle", widget: "text", default: "Transform communities through innovative solutions"}
-          - {label: "关于我们标题", name: "about_title", widget: "string", default: "About Us"}
-          - {label: "关于我们内容", name: "about_content", widget: "markdown"}
+          - {label: "网站标题", name: "site_title", widget: "string", default: "Dumpling Website Preview v9 — Refined Colors"}
+          - {label: "Hero区域主标题", name: "hero_title", widget: "string", default: "Make Your Impact"}
+          - {label: "Hero区域副标题", name: "hero_subtitle", widget: "text", default: "Transform communities through innovative solutions and meaningful connections"}
+          - {label: "About区域标题", name: "about_title", widget: "string", default: "ABOUT"}
+          - {label: "About区域内容", name: "about_content", widget: "markdown", default: "Dumpling is a bilingual Web3 educator, YouTuber, and strategist trusted by both English- and Chinese-speaking audiences..."}
+          - {label: "About区域图片", name: "about_image", widget: "image", default: "/images/about.png"}
           - {label: "联系邮箱", name: "contact_email", widget: "string", default: "hello@askdumpling.com"}
-          - {label: "社交媒体链接", name: "social_links", widget: "object", fields: [
-              {label: "Twitter", name: "twitter", widget: "string", required: false},
-              {label: "LinkedIn", name: "linkedin", widget: "string", required: false},
-              {label: "Instagram", name: "instagram", widget: "string", required: false}
-            ]}
-  - name: "blog"
-    label: "博客文章"
-    folder: "posts"
+  - name: "images"
+    label: "图片管理"
+    folder: "images"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
+    media_folder: ""
+    public_folder: "/images"
     fields:
-      - {label: "标题", name: "title", widget: "string"}
-      - {label: "发布日期", name: "date", widget: "datetime"}
-      - {label: "作者", name: "author", widget: "string"}
-      - {label: "摘要", name: "description", widget: "text"}
-      - {label: "内容", name: "body", widget: "markdown"}
+      - {label: "图片标题", name: "title", widget: "string"}
+      - {label: "图片文件", name: "image", widget: "image"}
+      - {label: "图片描述", name: "description", widget: "text", required: false}
