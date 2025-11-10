@@ -6,30 +6,32 @@ media_folder: "images"
 public_folder: "/images"
 
 collections:
-  - name: "content"
-    label: "网站内容"
+  - name: "pages"
+    label: "页面内容"
     files:
       - name: "home"
         label: "首页内容"
-        file: "index.html"
+        file: "content.md"
         fields:
-          - {label: "Hero 标题", name: "hero_title", widget: "string"}
-          - {label: "Hero 描述", name: "hero_description", widget: "text"}
-          - {label: "About 标题", name: "about_title", widget: "string"}
-          - {label: "About 内容", name: "about_content", widget: "text"}
-          - {label: "About 图片", name: "about_image", widget: "image"}
-          - label: "Impact 数据"
-            name: "impact_stats"
-            widget: "list"
-            fields:
-              - {label: "数据", name: "stat", widget: "string"}
-          - label: "Seen & Heard"
-            name: "seen_heard"
-            widget: "object"
-            fields:
-              - label: "机构"
-                name: "institutions"
-                widget: "list"
-                fields:
-                  - {label: "名称", name: "name", widget: "string"}
-                  - {label: "图片", name: "image", widget: "image"}
+          - {label: "网站标题", name: "site_title", widget: "string", default: "Ask Dumpling"}
+          - {label: "Hero 主标题", name: "hero_title", widget: "string", default: "Make Your Impact"}
+          - {label: "Hero 副标题", name: "hero_subtitle", widget: "text", default: "Transform communities through innovative solutions"}
+          - {label: "关于我们标题", name: "about_title", widget: "string", default: "About Us"}
+          - {label: "关于我们内容", name: "about_content", widget: "markdown"}
+          - {label: "联系邮箱", name: "contact_email", widget: "string", default: "hello@askdumpling.com"}
+          - {label: "社交媒体链接", name: "social_links", widget: "object", fields: [
+              {label: "Twitter", name: "twitter", widget: "string", required: false},
+              {label: "LinkedIn", name: "linkedin", widget: "string", required: false},
+              {label: "Instagram", name: "instagram", widget: "string", required: false}
+            ]}
+  - name: "blog"
+    label: "博客文章"
+    folder: "posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "标题", name: "title", widget: "string"}
+      - {label: "发布日期", name: "date", widget: "datetime"}
+      - {label: "作者", name: "author", widget: "string"}
+      - {label: "摘要", name: "description", widget: "text"}
+      - {label: "内容", name: "body", widget: "markdown"}
