@@ -1,75 +1,119 @@
 {
-  "site_title": "Dumpling Website Preview v9 — Refined Colors",
-  "hero": {
-    "title": "Dumpling",
-    "subtitle": "A bilingual Web3 YouTuber and cultural strategist — transforming complex blockchain ideas into accessible, story-driven education across YouTube and Twitter."
+  "contact": {
+    "email": "bullishdumpling@gmail.com",
+    "copyright": "© 2025 Dumpling | All Rights Reserved"
   },
-  "about": {
-    "title": "ABOUT",
-    "content": "Dumpling is a bilingual Web3 educator, YouTuber, and strategist trusted by both English- and Chinese-speaking audiences. She creates deep, educational content that connects blockchain's human and cultural layers — bridging storytelling and social insight.",
-    "image": "/images/about.png"
+  "site_title": "Dumpling",
+  "topics": {
+    "title": "Topics & Insights",
+    "items": [
+      {
+        "title": "Trust Without Ads – Why credibility is the new marketing."
+      },
+      {
+        "title": "Branding in Web3 – Building loyalty through shared narratives."
+      },
+      {
+        "title": "The Culture Layer – How belief and memes drive blockchain adoption."
+      }
+    ]
   },
   "impact": {
     "title": "IMPACT",
     "cards": [
-      { "text": "₳65M ADA Managed" },
-      { "text": "6,600+ Community Members" },
-      { "text": "48,000+ Organic Followers" },
-      { "text": "100+ Industry Interviews" },
-      { "text": "1.46% Governance Voting Power" },
-      { "text": "20K+ YouTube Subscribers" }
+      {
+        "text": "21000+ YouTube Subscribers"
+      },
+      {
+        "text": "48,000+ Organic Followers"
+      },
+      {
+        "text": "100+ Industry Interviews"
+      },
+      {
+        "text": "6,600+ Personal Community Members"
+      },
+      {
+        "text": "$35M Stakepool Operation AUM "
+      },
+      {
+        "text": "1.46% Governance Voting Power in A $21B Ecosystem"
+      }
     ]
+  },
+  "about": {
+    "title": "ABOUT",
+    "content": "Dumpling is a bilingual Web3 educator and strategist bridging retail, institutional, and academic worlds. She creates insightful, story-driven content that connects blockchain’s human and cultural layers, offering first-hand perspective from the industry front line.",
+    "image": "/images/about.png"
   },
   "seen_heard": {
     "title": "SEEN & HEARD",
     "gov_subtitle": "Government & Institutions",
     "industry_subtitle": "Industry Events"
   },
-  "awards": {
-    "title": "Awards & Affiliations"
-  },
-  "advisory": {
-    "title": "Advisory & Strategy",
-    "achievements": [
-      { "text": "Supported 10+ Web3 teams on brand, community, and trust." },
-      { "text": "Helped teams 2.4x their X engagement and 3x followers organically." },
-      { "text": "Guided 60+ founders in their Web3 journey." }
-    ]
-  },
   "testimonials": {
     "title": "Testimonials",
     "items": [
-      { "quote": "Testimonial text here...", "author": "CEO of" },
-      { "quote": "Another testimonial text here...", "author": "" }
+      {
+        "quote": "Dumpling helped us go from 0 to 1 within a month, precisely defining our brand positioning through her deep understanding of Web3 and sharp eye for team strengths.",
+        "author": "Hinson Wong, CFA, CEO of DeltaDefi"
+      },
+      {
+        "quote": "Dumpling is the best communicator and mediator I’ve ever seen — she commands a room full of strong personalities while making everyone feel heard.",
+        "author": " Jim Edington, Owner of Western Pacific Insurance"
+      }
     ]
   },
-  "knowledge": {
-    "title": "Knowledge Contributions",
-    "items": [
-      { "institution": "University of Surrey", "description": "Guest talk on Careers in Web3." },
-      { "institution": "Anglia Ruskin University", "description": "Sessions on blockchain business models." },
-      { "institution": "CIFY Institute", "description": "Workshops on Web3 Security and Protection." }
-    ]
-  },
-  "topics": {
-    "title": "Topics & Insights",
-    "items": [
-      { "title": "Social Media Rewired – How decentralized platforms reshape identity." },
-      { "title": "Trust Without Ads – Why credibility is the new marketing." },
-      { "title": "Branding in Web3 – Building loyalty through shared narratives." },
-      { "title": "The Culture Layer – Why belief and memes drive blockchain adoption." }
-    ]
+  "awards": {
+    "title": "Awards & Affiliations"
   },
   "quotes": {
     "title": "Quotes",
     "items": [
-      { "quote": "In a trustless ecosystem, credibility becomes a form of capital." },
-      { "quote": "Education in Web3 is no longer top-down — it's peer-to-peer." },
-      { "quote": "Blockchain's rise is not just technological; it's a cultural inflection point." }
+      {
+        "quote": "In a trustless ecosystem, credibility becomes a form of capital."
+      },
+      {
+        "quote": "Education in Web3 is no longer top-down, it's peer-to-peer."
+      },
+      {
+        "quote": "Blockchain's rise is not just technological; it's a cultural inflection point."
+      }
     ]
   },
-  "contact": {
-    "email": "bullishdumpling@gmail.com",
-    "copyright": "© 2025 Dumpling | All Rights Reserved"
+  "advisory": {
+    "title": "Advisory & Strategy",
+    "achievements": [
+      {
+        "text": "Supported 10+ Web3 teams on brand, community, and trust."
+      },
+      {
+        "text": "Helped teams 2.4x their X engagement and 3x followers organically."
+      },
+      {
+        "text": "Guided 60+ founders in their Web3 journey."
+      }
+    ]
+  },
+  "hero": {
+    "title": "Dumpling",
+    "subtitle": "A bilingual Web3 YouTuber and cultural strategist"
+  },
+  "knowledge": {
+    "title": "Knowledge Contributions",
+    "items": [
+      {
+        "institution": "University of Surrey",
+        "description": "Guest talk on Careers in Web3."
+      },
+      {
+        "institution": "Anglia Ruskin University",
+        "description": "Contributing to PhD study on blockchain business models"
+      },
+      {
+        "institution": "SheFi Cohort 9",
+        "description": "Teaching session on defi 101"
+      }
+    ]
   }
 }
