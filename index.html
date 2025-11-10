@@ -768,6 +768,13 @@
       .awards .img-grid { grid-template-columns: repeat(2, 1fr); }
       .knowledge .grid { grid-template-columns: 1fr; }
       .advisory .img-row { flex-direction: column; align-items: center; }
+      
+      /* Testimonials mobile optimization */
+      .advisory .img-row div {
+        margin-bottom: 40px;
+        max-width: 300px;
+      }
+      
       .social-icons { gap: 25px; }
       .social-icons a { width: 60px; height: 60px; font-size: 1.5em; }
     }
@@ -775,6 +782,13 @@
     @media (max-width: 480px) {
       .hero h1 { font-size: 2.5em; }
       .awards .img-grid { grid-template-columns: 1fr; }
+      
+      /* Testimonials mobile - smaller text */
+      .advisory .img-row div p {
+        font-size: 0.9em;
+        line-height: 1.5;
+        padding: 0 10px;
+      }
     }
 
     /* 滚动动画 */
@@ -862,13 +876,13 @@
     </ul>
     <h3>Testimonials</h3>
     <div class="img-row">
-      <div style="text-align: center;">
-        <div class="img-placeholder" title="Hinson Wong Profile Picture"></div>
+      <div style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+        <div class="img-placeholder" title="Hinson Wong Profile Picture" style="margin: 0 auto;"></div>
         <p style="text-align: center; margin: 20px 0; color: #555; font-style: italic;">"Dumpling helped us go from 0 to 1 within a month, precisely defining our brand positioning through her deep understanding of Web3 and sharp eye for team strengths."</p>
         <p style="text-align: center; margin: 10px 0; color: #6A1E3A; font-weight: 600;">Hinson Wong, CFA, CEO of DeltaDefi</p>
       </div>
-      <div style="text-align: center;">
-        <div class="img-placeholder" title="Jim Edington Profile Picture"></div>
+      <div style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+        <div class="img-placeholder" title="Jim Edington Profile Picture" style="margin: 0 auto;"></div>
         <p style="text-align: center; margin: 20px 0; color: #555; font-style: italic;">"Dumpling is the best communicator and mediator I've ever seen — she commands a room full of strong personalities while making everyone feel heard."</p>
         <p style="text-align: center; margin: 10px 0; color: #6A1E3A; font-weight: 600;">Jim Edington, Owner of Western Pacific Insurance</p>
       </div>
