@@ -114,14 +114,19 @@
       z-index: 1;
       max-width: 900px;
       margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transform: translateY(-50px); /* 整体上移50px */
     }
 
     .hero h1 { 
       font-size: 5em;
-      margin-bottom: 25px;
+      margin-bottom: 60px; /* 增加标题和副标题的距离 */
       font-weight: 700;
       animation: fadeInUp 1s ease-out;
       text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+      transform: translateY(-30px); /* 标题额外上移30px */
     }
 
     @keyframes fadeInUp {
@@ -142,6 +147,7 @@
       color: #E8D6E5;
       line-height: 1.8;
       animation: fadeInUp 1s ease-out 0.2s backwards;
+      transform: translateY(20px); /* 副标题下移20px */
     }
 
     /* ABOUT */
