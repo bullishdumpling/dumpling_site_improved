@@ -1,8 +1,6 @@
 backend:
-  name: github
-  repo: bullishdumpling/dumpling_site_improved
+  name: git-gateway
   branch: main
-  base_url: https://api.netlify.com
 
 media_folder: "images"
 public_folder: "/images"
